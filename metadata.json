@@ -1,0 +1,6 @@
+{
+  "name": "FoodLoop Global",
+  "description": "A vibrant, kid-friendly surplus food rescue and redistribution platform connecting food donors with verified shelters and NGOs to end waste and nourish communities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

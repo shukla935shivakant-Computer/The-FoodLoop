@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Gold Rim Gradient -->
+    <linearGradient id="goldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2C582" />
+      <stop offset="25%" stop-color="#C69E52" />
+      <stop offset="50%" stop-color="#F2DD9E" />
+      <stop offset="75%" stop-color="#9C7330" />
+      <stop offset="100%" stop-color="#C79F53" />
+    </linearGradient>
+
+    <!-- Ribbon Gold Gradient -->
+    <linearGradient id="ribbonGold" x1="0%" y1="0%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#F6E4A8" />
+      <stop offset="35%" stop-color="#D1A75B" />
+      <stop offset="70%" stop-color="#9C722D" />
+      <stop offset="100%" stop-color="#E7C97F" />
+    </linearGradient>
+
+    <!-- Navy Ribbon Gradient -->
+    <linearGradient id="ribbonNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#243C58" />
+      <stop offset="50%" stop-color="#16293D" />
+      <stop offset="100%" stop-color="#0E1B2A" />
+    </linearGradient>
+
+    <!-- Inner Glow / Shadow -->
+    <radialGradient id="badgeBg" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="85%" stop-color="#FCFAF5" />
+      <stop offset="100%" stop-color="#F4EFE6" />
+    </radialGradient>
+
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Circular Badge Base -->
+  <circle cx="250" cy="250" r="236" fill="url(#badgeBg)" filter="url(#softShadow)" />
+
+  <!-- Outer Thick Gold Ring -->
+  <circle cx="250" cy="250" r="232" fill="none" stroke="url(#goldRim)" stroke-width="14" />
+
+  <!-- Inner Fine Gold Ring -->
+  <circle cx="250" cy="250" r="217" fill="none" stroke="url(#goldRim)" stroke-width="2.5" />
+
+  <!-- Monogram Graphic Elements Group -->
+  <g id="logoGraphics" transform="translate(0, -10)">
+    
+    <!-- LEFT WHEAT STALK -->
+    <g id="wheatStalk" fill="url(#ribbonGold)">
+      <!-- Stem -->
+      <path d="M 184 154 Q 192 135 220 108" fill="none" stroke="url(#ribbonGold)" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Grains -->
+      <path d="M 183 150 C 178 143, 179 135, 185 131 C 190 137, 189 146, 183 150 Z" />
+      <path d="M 191 146 C 196 139, 204 139, 207 145 C 201 150, 193 149, 191 146 Z" />
+      <path d="M 197 135 C 193 127, 194 119, 201 116 C 205 122, 204 131, 197 135 Z" />
+      <path d="M 205 131 C 211 124, 219 125, 222 131 C 215 136, 208 135, 205 131 Z" />
+      <path d="M 211 120 C 208 112, 210 105, 217 103 C 221 109, 219 117, 211 120 Z" />
+      <path d="M 220 114 C 227 108, 234 110, 236 116 C 230 120, 222 119, 220 114 Z" />
+    </g>
+
+    <!-- CENTRAL INFINITY LOOP RIBBONS (F & L) -->
+    
+    <!-- Left Navy Loop (forming the left circular loop of the infinity) -->
+    <path d="M 215 152 C 160 152, 138 195, 138 245 C 138 295, 168 322, 214 322 C 238 322, 250 305, 250 286 C 250 238, 235 200, 235 156 Z"
+          fill="url(#ribbonNavy)" />
+    
+    <!-- Left Inner Cutout White Loop -->
+    <path d="M 214 174 C 180 174, 162 204, 162 245 C 162 284, 182 301, 213 301 C 224 301, 231 292, 231 278 C 231 245, 218 205, 218 174 Z"
+          fill="url(#badgeBg)" />
+
+    <!-- Left Inner Gold Ribbon Accent (Lining the left loop) -->
+    <path d="M 214 174 C 185 174, 168 202, 168 245 C 168 280, 184 297, 213 297 C 218 297, 220 294, 220 290 C 220 280, 178 275, 178 240 C 178 205, 195 180, 214 174 Z"
+          fill="url(#ribbonGold)" opacity="0.9" />
+
+    <!-- Right Navy Loop (forming the upper and lower loop of F) -->
+    <path d="M 235 156 C 235 130, 255 116, 280 116 C 304 116, 318 132, 318 152 C 318 175, 298 186, 275 198 C 252 210, 238 226, 238 246 C 238 288, 270 322, 315 322 C 342 322, 355 310, 360 300 C 346 308, 332 308, 314 308 C 282 308, 258 284, 258 250 C 258 232, 268 220, 288 208 C 312 195, 338 180, 338 148 C 338 118, 312 98, 278 98 C 242 98, 222 120, 222 154 Z"
+          fill="url(#ribbonNavy)" />
+
+    <!-- Central Gold Ribbon Sweep (The elegant flowing golden bar of the F) -->
+    <path d="M 238 152 C 245 138, 260 128, 280 128 C 300 128, 312 140, 312 152 C 312 168, 292 180, 268 192 C 248 202, 235 214, 235 230 L 235 272 C 235 276, 240 278, 244 274 C 254 260, 268 250, 290 250 L 302 250 C 308 250, 312 254, 312 260 C 312 268, 305 272, 294 272 L 272 272 C 255 272, 244 282, 244 294 C 244 314, 272 324, 310 324 C 332 324, 348 316, 354 308 C 338 316, 320 316, 305 316 C 275 316, 254 298, 254 270 C 254 246, 270 234, 294 220 C 322 204, 342 188, 342 152 C 342 120, 312 104, 280 104 C 250 104, 235 120, 232 144 Z"
+          fill="url(#ribbonGold)" />
+
+    <!-- FORK & SPOON AT TOP -->
+    <!-- Fork Prongs (Left side of top bridge) -->
+    <g id="forkProngs" fill="url(#ribbonNavy)">
+      <path d="M 232 94 L 232 108 L 237 108 L 237 94 Z" />
+      <path d="M 239 94 L 239 108 L 244 108 L 244 94 Z" />
+      <path d="M 246 94 L 246 108 L 251 108 L 251 94 Z" />
+      <path d="M 230 108 C 230 116, 253 116, 253 108 Z" />
+    </g>
+
+    <!-- Spoon (Right side of top bridge) -->
+    <g id="spoonHead" fill="url(#ribbonNavy)">
+      <path d="M 270 106 C 270 94, 296 94, 296 106 C 296 118, 270 118, 270 106 Z" />
+    </g>
+
+    <!-- LEFT ICON: DONATION COLLECTION BOX WITH HEART -->
+    <g id="donationBox" transform="translate(186, 222)">
+      <!-- Box Base -->
+      <rect x="0" y="8" width="30" height="24" rx="3" fill="url(#ribbonNavy)" />
+      <!-- Box Lid with slot -->
+      <path d="M -2 8 L 32 8 L 30 2 L 0 2 Z" fill="url(#ribbonGold)" />
+      <!-- Slot -->
+      <rect x="9" y="4" width="12" height="2" rx="1" fill="#FFFFFF" />
+      <!-- Coin Dropping -->
+      <circle cx="15" cy="-2" r="4" fill="url(#ribbonGold)" stroke="#FFFFFF" stroke-width="0.8" />
+      <!-- White Heart on Box -->
+      <path d="M 15 17 C 15 15, 12 13, 10 15 C 8 17, 10 20, 15 24 C 20 20, 22 17, 20 15 C 18 13, 15 15, 15 17 Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- RIGHT ICON: SHELTER HOUSE WITH HEART -->
+    <g id="shelterHouse" transform="translate(322, 224)">
+      <!-- Roof -->
+      <polygon points="17,0 0,14 34,14" fill="url(#ribbonNavy)" />
+      <!-- House Body -->
+      <rect x="4" y="14" width="26" height="20" rx="1.5" fill="url(#ribbonNavy)" />
+      <!-- White Heart in Center -->
+      <path d="M 17 22 C 17 20, 14 18, 12 20 C 10 22, 12 25, 17 29 C 22 25, 24 22, 22 20 C 20 18, 17 20, 17 22 Z" fill="#FFFFFF" />
+    </g>
+
+    <!-- RIGHT ICON: CURVED GOLDEN ARROW POINTING TO HOUSE -->
+    <g id="redistributionArrow">
+      <path d="M 318 150 C 336 170, 342 196, 338 214"
+            fill="none" stroke="url(#ribbonGold)" stroke-width="7" stroke-linecap="round" />
+      <polygon points="340,224 330,208 348,212" fill="url(#ribbonGold)" />
+    </g>
+
+    <!-- CENTRAL/LOWER EMBELLISHMENT: GOLDEN HEART -->
+    <g id="bottomHeart" transform="translate(292, 258)">
+      <path d="M 10 8 C 10 5, 6 2, 3 5 C 0 8, 3 13, 10 18 C 17 13, 20 8, 17 5 C 14 2, 10 5, 10 8 Z"
+            fill="url(#ribbonGold)" filter="url(#softShadow)" />
+    </g>
+  </g>
+
+  <!-- TEXT SECTION (EXACT TYPOGRAPHY & MOTTO) -->
+  <g id="logoText" text-anchor="middle">
+    <!-- "FOOD LOOP" Headline -->
+    <text x="250" y="372"
+          font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif"
+          font-size="37"
+          font-weight="900"
+          letter-spacing="5"
+          fill="#16293D">
+      FOOD LOOP
+    </text>
+
+    <!-- "DONOR TO CONSUMER" Tagline -->
+    <text x="250" y="398"
+          font-family="'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif"
+          font-size="13.5"
+          font-weight="800"
+          letter-spacing="4"
+          fill="#16293D">
+      DONOR TO CONSUMER
+    </text>
+
+    <!-- Arch of 7 Decorative Golden Dots Below -->
+    <g id="dotsArch" fill="url(#ribbonGold)">
+      <circle cx="214" cy="413" r="2.2" />
+      <circle cx="226" cy="417" r="2.6" />
+      <circle cx="238" cy="419.5" r="3" />
+      <circle cx="250" cy="420.5" r="3.6" />
+      <circle cx="262" cy="419.5" r="3" />
+      <circle cx="274" cy="417" r="2.6" />
+      <circle cx="286" cy="413" r="2.2" />
+    </g>
+  </g>
+</svg>
